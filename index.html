@@ -1,33 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- tailwind daisyui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- google sora font cdn -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+            rel="stylesheet">
+        <!-- font awesome cdn -->
+        <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+        <!-- tailwind daisyui cdn -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+            rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
+                'bt-primary': '#179800',
               }
             }
           }
         }
       </script>
-    <title>Natures Platter</title>
-</head>
-<body>
-    <header>
+        <title>Natures Platter</title>
+        <style>
+            .sora-font {
+                        font-family: "Sora", serif;
+                      }
+        </style>
+    </head>
+    <body class="sora-font">
+        <header>
+            <nav class="mt-2">
+                <div class="navbar container mx-auto">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button"
+                                class="btn btn-ghost lg:hidden">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul
+                                tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                                <li><a>Product</a></li>
+                                <li><a>Services</a></li>
+                                <li><a>Contact us</a></li>
+                            </ul>
+                        </div>
+                        <a class="">
+                            <img class="w-36 h-14 cursor-pointer" src="./c2-assets/logo-header.png" alt="">
+                        </a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 ">
+                            <li><a class="hover:bg-bt-primary hover:text-white">Product</a></li>
+                            <li><a class="hover:bg-bt-primary hover:text-white">Services</a></li>
+                            <li><a class="hover:bg-bt-primary hover:text-white">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end gap-3">
+                        <div class="flex gap-4">
+                            <i class="fa-solid fa-magnifying-glass text-xl hover:text-bt-primary cursor-pointer"></i>
+                            <i class="fa-solid fa-cart-shopping text-xl hover:text-bt-primary cursor-pointer mr-2"></i>
+                        </div>
+                        <a  class="btn font-normal border-bt-primary hover:bg-bt-primary hover:text-white">Login</a>
+                        <a  class="btn font-normal border-bt-primary  hover:bg-bt-primary hover:text-white">Register</a>
+                    </div>
+                </div>
+            </nav>
 
-    </header>
-    <main>
+        </header>
+        <main>
 
-    </main>
-    <footer>
+        </main>
+        <footer>
 
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
