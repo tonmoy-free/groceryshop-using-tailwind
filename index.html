@@ -37,12 +37,35 @@
     </head>
     <body class="sora-font">
         <header>
-            <nav class="mt-2">
+            <nav class="md:mt-2 border border-bt-primary md:border-none">
                 <div class="navbar container mx-auto">
                     <div class="navbar-start">
-                        <div class="dropdown">
+                        
+                        <a class="">
+                            <img class="w-36 h-14 cursor-pointer hidden md:block" src="./c2-assets/logo-header.png" alt="">
+                            <img class="ml-4 lg:hidden" src="./c2-assets/logo-header-mobile.png" alt="">
+                        </a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 ">
+                            <li><a class="hover:bg-bt-primary hover:text-white">Product</a></li>
+                            <li><a class="hover:bg-bt-primary hover:text-white">Services</a></li>
+                            <li><a class="hover:bg-bt-primary hover:text-white">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end gap-3">
+                        <div class="flex gap-4 ">
+                            <i class="fa-solid fa-magnifying-glass text-xl hover:text-bt-primary cursor-pointer hidden md:block"></i>
+                            <i class="fa-solid fa-cart-shopping text-xl hover:text-bt-primary cursor-pointer mr-2 hidden md:block"></i>
+                        </div>
+                        <div class="flex  hidden md:block">
+                            <a  class="btn font-normal border-bt-primary hover:bg-bt-primary hover:text-white mr-2">Login</a>
+                            <a  class="btn font-normal border-bt-primary  hover:bg-bt-primary hover:text-white">Register</a>
+                        </div>
+                        
+                        <div class="dropdown hover:text-bt-primary cursor-pointer">
                             <div tabindex="0" role="button"
-                                class="btn btn-ghost lg:hidden">
+                                class="btn btn-ghost lg:hidden ">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     class="h-5 w-5"
@@ -58,30 +81,12 @@
                             </div>
                             <ul
                                 tabindex="0"
-                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                                 <li><a>Product</a></li>
                                 <li><a>Services</a></li>
                                 <li><a>Contact us</a></li>
                             </ul>
                         </div>
-                        <a class="">
-                            <img class="w-36 h-14 cursor-pointer" src="./c2-assets/logo-header.png" alt="">
-                        </a>
-                    </div>
-                    <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1 ">
-                            <li><a class="hover:bg-bt-primary hover:text-white">Product</a></li>
-                            <li><a class="hover:bg-bt-primary hover:text-white">Services</a></li>
-                            <li><a class="hover:bg-bt-primary hover:text-white">Contact us</a></li>
-                        </ul>
-                    </div>
-                    <div class="navbar-end gap-3">
-                        <div class="flex gap-4">
-                            <i class="fa-solid fa-magnifying-glass text-xl hover:text-bt-primary cursor-pointer"></i>
-                            <i class="fa-solid fa-cart-shopping text-xl hover:text-bt-primary cursor-pointer mr-2"></i>
-                        </div>
-                        <a  class="btn font-normal border-bt-primary hover:bg-bt-primary hover:text-white">Login</a>
-                        <a  class="btn font-normal border-bt-primary  hover:bg-bt-primary hover:text-white">Register</a>
                     </div>
                 </div>
             </nav>
