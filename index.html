@@ -23,6 +23,7 @@
               colors: {
                 clifford: '#da373d',
                 'bt-primary': '#179800',
+                'service-bg': '#EFEBE3',
               }
             }
           }
@@ -129,10 +130,45 @@
         </header>
         <main>
             <!-- service section -->
-             <section class="container mx-auto mt-32">
-                <h3 class="text-bt-primary font-medium text-4xl">Services</h3>
-                <div>
-                    
+             <section class="container mx-auto mt-32 p-4">
+                <h3 class="text-bt-primary font-semibold text-4xl mb-12">Services</h3>
+                <div class="flex gap-5 md:gap-6 flex-col md:flex-row">
+                    <!-- card 1 -->
+                        <div class="w-full  bg-service-bg shadow-xl  p-6 rounded-2xl">
+                            <div class="card-body items-center text-center">
+                              <div>
+                                <div class="w-36 rounded-full bg-white">
+                                  <img class="p-6" src="./c2-assets/service.png" alt="">
+                                </div>
+                              </div>
+                              <h2 class="card-title mt-4">24/7 Services</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                          </div>
+                      <!-- card 2 -->
+                    <div class="w-full bg-service-bg shadow-xl  p-6 rounded-2xl">
+                        <div class="card-body items-center text-center">
+                          <div>
+                            <div class="w-36 rounded-full bg-white">
+                              <img class="p-6" src="./c2-assets/delivery.png" alt="">
+                            </div>
+                          </div>
+                          <h2 class="card-title mt-4">Fast Delivery</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                      </div>
+                      <!-- card 3 -->
+                    <div class="w-full bg-service-bg shadow-xl p-6 rounded-2xl">
+                        <div class="card-body items-center text-center">
+                          <div>
+                            <div class="w-36 rounded-full bg-white">
+                              <img class="p-6" src="./c2-assets/healthy.png" alt="">
+                            </div>
+                          </div>
+                          <h2 class="card-title mt-4">Healthy Products</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                      </div> 
                 </div>
              </section>
         </main>
